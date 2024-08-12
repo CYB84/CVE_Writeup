@@ -30,14 +30,14 @@ admin123
 ### Affected Page:
 
 ```
-/Admin/changepassword.php
+/Employee/edit-profile.php
 ```
 
-The parameter  `txtold_password`、`txtnew_password` and `txtconfirm_password` are being echoed directly into the HTML without proper sanitization or validation. This allows an attacker to inject arbitrary JavaScript code into the page, leading to XSS attacks.
+The parameter  `txtfullname` and `txtaddress` are being echoed directly into the HTML without proper sanitization or validation. This allows an attacker to inject arbitrary JavaScript code into the page, leading to XSS attacks.
 
 ```php
-# /Admin/changepassword.php
-182 <input type="text" class="form-control" name="txtold_password" id="exampleInputEmail1" size="77" value="<?php if (isset($_POST['txtold_password']))?><?php echo $_POST['txtold_password']; ?>" >
+# Employee/edit-profile.php
+<input type="text" size="77" name="txtaddress" value="USA" class="form-control">
 186 <input type="password" class="form-control" name="txtnew_password" id="exampleInputEmail1" size="77" value="<?php if (isset($_POST['txtnew_password']))?><?php echo $_POST['txtnew_password']; ?>" >
 190 <input type="password" class="form-control" name="txtconfirm_password" id="exampleInputPassword1" size="77" value="<?php if (isset($_POST['txtconfirm_password']))?><?php echo $_POST['txtconfirm_password']; ?>" >
 ```
