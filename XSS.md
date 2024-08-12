@@ -1,5 +1,5 @@
 # Prison Management System
-## XSS on `/Admin/changepassword.php`
+## XSS on `/Employee/edit-profile.php`
 
 ### Vendor Homepage:
 
